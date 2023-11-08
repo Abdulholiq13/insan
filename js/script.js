@@ -35,11 +35,11 @@ document.addEventListener('keydown', (e) => {
 
 // const modalTimerId = setTimeout(openModal, 4000)
 
-function showModalByScroll() {
-	if(window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
-		openModal()
-		window.removeEventListener('scroll', showModalByScroll)
-	}
-}
+// function showModalByScroll() {
+// 	if(window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
+// 		openModal()
+// 		window.removeEventListener('scroll', showModalByScroll)
+// 	}
+// }
 
-window.addEventListener('scroll', showModalByScroll)
+// window.addEventListener('scroll', showModalByScroll)
