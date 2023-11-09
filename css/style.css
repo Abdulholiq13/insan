@@ -17,7 +17,7 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 18px;
@@ -31,78 +31,6 @@ body {
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Hero */
-.header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 120vh;
-  margin-bottom: 100px;
-  background-image: url('../img/bobur-musaboyev.png');
-  background-position: right bottom;
-  background-size: 45% 110%;
-  background-repeat: no-repeat;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.hero__text-content {
-  width: 500px;
-  margin-right: 420px;
-}
-
-.logo__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  width: 300px;
-  margin-bottom: 30px;
-}
-
-.logo__img {
-  width: 90px;
-  height: 90px;
-  margin-right: 20px;
-}
-
-.start {
-  font: 20px;
-}
-
-.time {
-  font-size: 21px;
-  color: #15c4d8;
-  font-weight: 600;
-}
-.hero__title-wrapper {
-  width: 400px;
-  margin-bottom: 20px;
-}
-.hero__title {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 1;
-}
-.hero__info-wrapper {
-  width: 450px;
-  font-size: 20px;
-}
-.hero__info-text {
-  color: #15c4d8;
-  font-size: 22px;
-  line-height: 1.2;
-  margin-bottom: 50px;
 }
 
 .btn {
@@ -138,15 +66,60 @@ body {
   width: 380px;
 }
 
-.bobur__info {
-  width: 100%;
-  height: 30px;
-  margin-bottom: 60px;
-  text-align: center;
+/* Header */
+.header {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-image: url('../img/bobur-musaboyev.png');
+	background-position: right top;
+	background-size: 45% 125%;
+	background-repeat: no-repeat;
+}
+.text__content {
+	display: flex;
+	flex-direction: column;
+	align-items: left	;
+	justify-content: center;
+	height: 100vh;
+	margin-top: 50px;
+}
+.text__logo-wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
 }
 
-.bobur__info-text {
-  font-size: 40px;
+.text__logo {
+	margin-right: 15px;
+}
+
+.text__logo-tex-start {
+	font-size: 21px;
+	text-transform: uppercase;
+	color: #15c4d8;
+}
+.text__content-text {
+	width: 50%;
+}
+.text__content-text-title {
+	text-transform: uppercase;
+	line-height: 1.1;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+.text__contetn-text-info {
+	width: 340px;
+	font-size: 22px;
+	line-height: 1.2;
+	color: #15c4d8;
+	margin-bottom: 40px;
+}
+.btn {
+}
+.btn-aqua {
+}
+.header__bg-img {
 }
 
 /* MODAL */
@@ -226,7 +199,8 @@ form {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 200px;
+  height: 170px;
+  margin-bottom: 30px;
   background-color: #293f66;
 }
 
@@ -408,73 +382,73 @@ form {
   justify-content: center;
   width: 100%;
   height: 150px;
-	text-align: center;
+  text-align: center;
   margin-bottom: 50px;
 }
 .course__benifets-title {
-	text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 55px;
 }
 .course__benifets-icons {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-left: 25px;
-	margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  margin-bottom: 20px;
 }
 
 .course__benifets-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 .course__benifets-icon {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	width: 90%;
-	height: 100px;
-	background-color: #2f4268;
-	border: 3px solid #3e4095;
-	border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 100px;
+  background-color: #2f4268;
+  border: 3px solid #3e4095;
+  border-radius: 10px;
 }
 .course__benifets-icon__text-wrapper {
-	width: 75%;
+  width: 75%;
 }
 .course__benifets-icon__text {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 /* Customer Opinion */
 .customer-opinion {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .customer-opinion__title-wrapper {
-	width: 100%;
-	font-size: 55px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 40px;
+  width: 100%;
+  font-size: 55px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .customer-opinion__video-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	text-align: center;
-	gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
 }
 
 .customer-opinion__video-text {
-	font-size: 22px;
-	margin-bottom: 30px;
+  font-size: 22px;
+  margin-bottom: 30px;
 }

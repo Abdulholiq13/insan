@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Insan</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 320px)" href="css/smallscreen.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -13,76 +14,66 @@
       referrerpolicy="no-referrer" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="header">
-      <!-- Hero -->
-      <div class="hero">
-        <div class="container">
-          <div class="hero__text-content">
-            <!-- Logo Wrapper -->
-            <div class="logo__wrapper">
-              <img class="logo__img" src="./img/insan-logo.png" alt="Insan logo" />
-              <div class="logo__text-wrapper">
-                <p class="logo__text start">Курсимизга старт</p>
-                <p class="logo__text time">22-НОЯБРДАН</p>
-              </div>
-            </div>
-            <!-- Hero Title -->
-            <div class="hero__title-wrapper">
-              <h1 class="hero__title">Бизнес Бошқарув Курси</h1>
-            </div>
-            <!-- Hero info -->
-            <div class="hero__info-wrapper">
-              <p class="hero__info-text">6 ҳафта давомида бизнесингиз бошқарувини осонлаштиринг ва самарадорлигини оширинг</p>
-              <button data-modal class="btn btn-aqua">Рўйҳатдан ўтиш</button>
+      <div class="container header__container">
+        <div class="text__content">
+          <div class="text__logo-wrapper">
+            <img class="text__logo" src="./img/insan-logo.png" alt="Insan Logo" width="70" height="70" />
+            <div class="text__logo-text__wrapper">
+              <p class="text__logo-text">Курсимизга старт</p>
+              <p class="text__logo-tex-start">22 Ноябрдан</p>
             </div>
           </div>
-          <!-- Bobur Musaboyev Info -->
-        </div>
-        <div class="bobur__info">
-          <h3 class="bobur__info-text">Бобур Мусабоев курс муаллифи ва спикер</h3>
-        </div>
-      </div>
 
-      <!-- HEADER ICONS -->
-      <div class="header__icons">
-        <div class="header__icon">
-          <img class="header__icons-img" src="./img/brend-paket.jpg" alt="Brend Paket" width="70" height="70" />
-          <div class="header__icon-info">
-            <p class="header__icon-title">"BREND PAKET"</p>
-            <p class="header__icon-text">корхона асосчиси</p>
+          <div class="text__content-text">
+            <h1 class="text__content-text-title">Бизнес бошқарув курси</h1>
+            <p class="text__contetn-text-info">6 хафта давмида бизнесингиз бошқарувини осонлаштиринг ва самарадорлигини оширинг</p>
           </div>
-        </div>
-        <div class="header__icon">
-          <img class="header__icons-img" src="./img/insan-logo-white.jpg" alt="Insan Logo" width="70" height="70" />
-          <div class="header__icon-info">
-            <p class="header__icon-title">"insan"</p>
-            <p class="header__icon-text">лойиҳаси асосчиси</p>
-          </div>
-        </div>
-        <div class="header__icon">
-          <img class="header__icons-img" src="./img/biznes-kodeks.jpg" alt="Biznes Kodeks" width="70" height="70" />
-          <div class="header__icon-info">
-            <p class="header__icon-title">"Biznes Kodeks"</p>
-            <p class="header__icon-text">Қўлланмаси муаллифи</p>
-          </div>
-        </div>
-        <div class="header__icon">
-          <img class="header__icons-img" src="./img/korxona.jpg" alt="Brend Paket" width="70" height="70" />
-          <div class="header__icon-info">
-            <p class="header__icon-title">"20 дан ортиқ"</p>
-            <p class="header__icon-text">корхоналарни тизимлаштирга</p>
-          </div>
-        </div>
-        <div class="header__icon">
-          <img class="header__icons-img" src="./img/seminar.jpg" alt="Seminar" width="70" height="70" />
-          <div class="header__icon-info">
-            <p class="header__icon-title">"3000 дан ортиқ"</p>
-            <p class="header__icon-text">ктадбиркорларга семинар ўтган</p>
-          </div>
+
+          <button data-modal class="btn btn-aqua">Рўйхатдан ўтиш</button>
         </div>
       </div>
     </header>
+
+    <!-- HEADER ICONS -->
+    <div class="header__icons">
+      <div class="header__icon">
+        <img class="header__icons-img" src="./img/brend-paket.jpg" alt="Brend Paket" width="70" height="70" />
+        <div class="header__icon-info">
+          <p class="header__icon-title">"BREND PAKET"</p>
+          <p class="header__icon-text">корхона асосчиси</p>
+        </div>
+      </div>
+      <div class="header__icon">
+        <img class="header__icons-img" src="./img/insan-logo-white.jpg" alt="Insan Logo" width="70" height="70" />
+        <div class="header__icon-info">
+          <p class="header__icon-title">"insan"</p>
+          <p class="header__icon-text">лойиҳаси асосчиси</p>
+        </div>
+      </div>
+      <div class="header__icon">
+        <img class="header__icons-img" src="./img/biznes-kodeks.jpg" alt="Biznes Kodeks" width="70" height="70" />
+        <div class="header__icon-info">
+          <p class="header__icon-title">"Biznes Kodeks"</p>
+          <p class="header__icon-text">Қўлланмаси муаллифи</p>
+        </div>
+      </div>
+      <div class="header__icon">
+        <img class="header__icons-img" src="./img/korxona.jpg" alt="Brend Paket" width="70" height="70" />
+        <div class="header__icon-info">
+          <p class="header__icon-title">"20 дан ортиқ"</p>
+          <p class="header__icon-text">корхоналарни тизимлаштирга</p>
+        </div>
+      </div>
+      <div class="header__icon">
+        <img class="header__icons-img" src="./img/seminar.jpg" alt="Seminar" width="70" height="70" />
+        <div class="header__icon-info">
+          <p class="header__icon-title">"3000 дан ортиқ"</p>
+          <p class="header__icon-text">ктадбиркорларга семинар ўтган</p>
+        </div>
+      </div>
+    </div>
 
     <!-- COURSE INFO -->
     <div class="course__info">
