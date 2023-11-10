@@ -620,7 +620,7 @@ form {
   }
 
   .btn-aqua {
-		height: 70px;
+    height: 70px;
   }
 }
 
@@ -633,7 +633,7 @@ form {
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   .header {
     background: none;
-    height: 91vh;
+    height: 100vh;
   }
 
   .header__bg {
@@ -739,22 +739,22 @@ form {
     font-size: 30px;
   }
 
-	.modal__content {
-		width: 85%;
-		padding: 40px 0;
-	}
+  .modal__content {
+    width: 85%;
+    padding: 40px 0;
+  }
 
-	.modal__dialog {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+  .modal__dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-	.modal__input {
-		width: 300px;
-	}
+  .modal__input {
+    width: 300px;
+  }
 
-	.btn-aqua-long {
-		width: 300px;
-	}
+  .btn-aqua-long {
+    width: 300px;
+  }
 }
