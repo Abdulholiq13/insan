@@ -738,4 +738,23 @@ form {
   .customer-opinion__title {
     font-size: 30px;
   }
+
+	.modal__content {
+		width: 85%;
+		padding: 40px 0;
+	}
+
+	.modal__dialog {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.modal__input {
+		width: 300px;
+	}
+
+	.btn-aqua-long {
+		width: 300px;
+	}
 }
