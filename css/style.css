@@ -633,7 +633,7 @@ form {
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   .header {
     background: none;
-    height: 81vh;
+    height: 91vh;
   }
 
   .header__bg {
@@ -657,7 +657,7 @@ form {
     margin-top: 10px;
     align-items: center;
     justify-content: space-evenly;
-    height: 80vh;
+    height: 90vh;
   }
 
   .text__content-text {
