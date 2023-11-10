@@ -720,7 +720,7 @@ form {
   }
 
   .course__program-time__text-wrapper {
-    font-size: 10px;
+    font-size: 11px;
     margin-left: 110px;
   }
 
@@ -734,7 +734,7 @@ form {
 
   .course__benifets-icon__text {
     flex-wrap: wrap;
-    font-size: 10px;
+    font-size: 12px;
   }
 
 	.course__benifets-icon__img {
