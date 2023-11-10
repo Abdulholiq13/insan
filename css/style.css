@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+html {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,14 +19,12 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100%;
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 18px;
   color: #f8f8f8;
-  background: linear-gradient(-120deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(61, 63, 140, 1) 100%);
+  background: linear-gradient(to right, rgba(61, 63, 140, 1), rgb(7, 7, 7));
 }
 
 .container {
@@ -36,8 +38,7 @@ body {
 .btn {
   width: 320px;
   height: 70px;
-  margin-bottom: 55px;
-  border: none;
+  border: 0;
   border-radius: 10px;
   font-size: 22px;
   font-family: 'Helvetica', 'Arial', sans-serif;
@@ -56,6 +57,7 @@ body {
 
 .btn-aqua {
   background-color: #15c4d8;
+  margin-bottom: 10px;
 }
 
 .btn-white {
@@ -68,58 +70,71 @@ body {
 
 /* Header */
 .header {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	background-image: url('../img/bobur-musaboyev.png');
-	background-position: right top;
-	background-size: 45% 125%;
-	background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url('../img/bobur-musaboyev.png');
+  background-position: right top;
+  background-size: 30% 105%;
+  background-repeat: no-repeat;
 }
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .text__content {
-	display: flex;
-	flex-direction: column;
-	align-items: left	;
-	justify-content: center;
-	height: 100vh;
-	margin-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
 }
 .text__logo-wrapper {
-	display: flex;
-	align-items: center;
-	margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .text__logo {
-	margin-right: 15px;
+  margin-right: 15px;
 }
 
 .text__logo-tex-start {
-	font-size: 21px;
-	text-transform: uppercase;
-	color: #15c4d8;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #15c4d8;
 }
 .text__content-text {
-	width: 50%;
+  width: 50%;
 }
 .text__content-text-title {
-	text-transform: uppercase;
-	line-height: 1.1;
-	font-size: 60px;
-	margin-bottom: 20px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
-.text__contetn-text-info {
-	width: 340px;
-	font-size: 22px;
-	line-height: 1.2;
-	color: #15c4d8;
-	margin-bottom: 40px;
+.text__content-text-info {
+  width: 340px;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #15c4d8;
+  margin-bottom: 40px;
 }
-.btn {
+.speaker__info-wrapper {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.btn-aqua {
-}
-.header__bg-img {
+
+.speaker__info {
+  font-size: 45px;
 }
 
 /* MODAL */
@@ -244,6 +259,7 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .course__info-container {
@@ -276,11 +292,15 @@ form {
   justify-content: center;
   width: 250px;
   height: 200px;
-  margin-right: 70px;
   margin-bottom: 30px;
   border: 3px solid #e6e7e8;
   border-radius: 20px;
 }
+
+.course__info-icon:not(:last-child) {
+  margin-right: 70px;
+}
+
 .course__info-img {
   border-radius: 50%;
   margin-bottom: 10px;
@@ -338,13 +358,13 @@ form {
 .course__program-time__img {
   position: absolute;
   left: 30px;
-  top: -1;
+  top: -5px;
   border-radius: 8px;
 }
 .course__program-time__text-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: center;
   width: 90%;
   height: 110px;
@@ -375,6 +395,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .course__benifets-title__inner {
   display: flex;
@@ -395,7 +416,6 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 25px;
   margin-bottom: 20px;
 }
 
@@ -427,7 +447,6 @@ form {
 .customer-opinion {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -451,4 +470,252 @@ form {
 .customer-opinion__video-text {
   font-size: 22px;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 2700px) and (min-width: 1000px) {
+  .header {
+    background-size: 60% 120%;
+  }
+
+  .header__bg {
+    display: none;
+  }
+
+  .customer-opinion__video-wrapper {
+    display: flex;
+  }
+
+  .course__program-title__inner {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .course__program-time__wrapper {
+    width: 100%;
+  }
+
+  .text__content-text {
+    margin-bottom: 20px;
+  }
+
+  .text__content-text-title {
+    font-size: 90px;
+  }
+
+  .text__content-text-info {
+    font-size: 30px;
+    width: 500px;
+    margin-bottom: 10px;
+  }
+
+  .speaker__info-wrapper {
+    padding-top: 50px;
+  }
+
+  .speaker__info {
+    font-size: 45px;
+  }
+
+  .text__content-text-info {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 900px) {
+  .header {
+    background-size: 60% 105%;
+  }
+
+  .header__bg {
+    display: none;
+  }
+
+  .customer-opinion__video-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course__program-title__inner {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .course__program-time__wrapper {
+    width: 100%;
+  }
+
+  .text__content-text {
+    margin-bottom: 20px;
+  }
+
+  .text__content-text-title {
+    font-size: 90px;
+  }
+
+  .text__content-text-info {
+    font-size: 30px;
+    width: 500px;
+    margin-bottom: 10px;
+  }
+
+  .speaker__info-wrapper {
+    padding-top: 50px;
+  }
+
+  .speaker__info {
+    font-size: 45px;
+  }
+
+  .text__content-text-info {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+  .header {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 55% 120%;
+  }
+
+  .header__bg {
+    display: none;
+  }
+
+  .customer-opinion__video-wrapper {
+    flex-direction: column;
+  }
+
+  .course__program-inner {
+    margin-bottom: 30px;
+  }
+
+  .course__program-title__inner {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .course__program-time__wrapper {
+    width: 100%;
+  }
+
+  .text__content {
+    height: 0;
+    margin-top: 10px;
+  }
+
+  .speaker__info-wrapper {
+    bottom: -350px;
+  }
+
+  .speaker__info {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+
+  .text__content-text-info {
+    margin-bottom: 10px;
+  }
+
+  .btn-aqua {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 1000px) {
+  .customer-opinion__video-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  .header {
+    background: none;
+  }
+
+  .header__bg {
+    display: block;
+  }
+
+  .customer-opinion__video-wrapper {
+    flex-direction: column;
+		width: 130px;
+		margin-left: 70px;
+  }
+
+  .course__program-title__inner {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .course__program-time__wrapper {
+    width: 100%;
+  }
+
+  .text__content {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .text__content-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .speaker__info {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .text__content-text-info {
+    margin-bottom: 10px;
+  }
+
+  .header__icons {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .header__icons-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header__icon-title {
+    font-size: 22px;
+  }
+  .header__icon-text {
+    font-size: 19px;
+    width: 100%;
+  }
+  .course__info-icons {
+    flex-direction: column;
+  }
+
+  .course__info-icon:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .course__program-inner {
+    margin-bottom: 30px;
+  }
+
+  .course__program-time__text-wrapper {
+    font-size: 14px;
+		margin-left: 110px;
+  }
+
+	.course__program-time__img {
+		left: 5px;
+	}
+
+  .course__benifets-icon__text {
+    font-size: 16px;
+  }
 }
