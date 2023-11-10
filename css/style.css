@@ -668,9 +668,9 @@ form {
     justify-content: center;
   }
 
-	.speaker__info-wrapper {
-		bottom: -10px;
-	}
+  .speaker__info-wrapper {
+    bottom: -100px;
+  }
 
   .speaker__info {
     text-transform: uppercase;
