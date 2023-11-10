@@ -76,7 +76,7 @@ body {
   flex-wrap: wrap;
   background-image: url('../img/bobur-musaboyev.png');
   background-position: right top;
-  background-size: 30% 105%;
+  background-size: 45% 120%;
   background-repeat: no-repeat;
 }
 
@@ -472,9 +472,9 @@ form {
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 2700px) and (min-width: 1000px) {
+@media only screen and (max-width: 2700px) and (min-width: 1600px) {
   .header {
-    background-size: 60% 120%;
+    background-size: 45% 120%;
   }
 
   .header__bg {
@@ -620,7 +620,7 @@ form {
   }
 
   .btn-aqua {
-    padding: 20px;
+		height: 70px;
   }
 }
 
@@ -633,6 +633,7 @@ form {
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   .header {
     background: none;
+    height: 81vh;
   }
 
   .header__bg {
@@ -641,8 +642,6 @@ form {
 
   .customer-opinion__video-wrapper {
     flex-direction: column;
-		width: 130px;
-		margin-left: 70px;
   }
 
   .course__program-title__inner {
@@ -658,6 +657,7 @@ form {
     margin-top: 10px;
     align-items: center;
     justify-content: space-evenly;
+    height: 80vh;
   }
 
   .text__content-text {
@@ -669,7 +669,8 @@ form {
   }
 
   .speaker__info {
-    font-size: 35px;
+    text-transform: uppercase;
+    font-size: 30px;
     text-align: center;
   }
 
@@ -708,14 +709,33 @@ form {
 
   .course__program-time__text-wrapper {
     font-size: 14px;
-		margin-left: 110px;
+    margin-left: 110px;
+    padding: 80px 0;
   }
 
-	.course__program-time__img {
-		left: 5px;
-	}
+  .course__program-time__img {
+    left: 5px;
+  }
+
+  .course__program-title {
+    font-size: 30px;
+  }
 
   .course__benifets-icon__text {
+    flex-wrap: wrap;
     font-size: 16px;
+  }
+
+  .course__benifets-title {
+    font-size: 40px;
+  }
+
+  .customer-opinion__vidoe-vidoe {
+    width: 300px;
+    height: 215px;
+  }
+
+  .customer-opinion__title {
+    font-size: 30px;
   }
 }
